@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './SignUp.module.css';
+import React from "react";
+import styles from "./SignUp.module.css";
 import {
   FormControl,
   InputLabel,
@@ -7,10 +7,16 @@ import {
   FormLabel,
   RadioGroup,
   FormControlLabel,
-  Radio
-} from '@mui/material';
+  Radio,
+} from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
+  const handleSignup = () => {
+    navigate("/signup");
+  };
   return (
     <>
       <h1 className={styles.heading}>Create your PopX account</h1>
@@ -62,7 +68,12 @@ const SignUp = () => {
         </FormControl>
       </div>
 
-      <button className={styles.createAccountButton}>Create Account</button>
+      <button
+        onClick={handleSignup}
+        className={styles.createAccountButton}
+      >
+        Create Account
+      </button>
     </>
   );
 };

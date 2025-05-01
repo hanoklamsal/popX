@@ -1,8 +1,13 @@
 import React from 'react';
 import styles from './Login.module.css';
+import { useNavigate } from 'react-router-dom';
 import { FormControl, InputLabel, OutlinedInput } from '@mui/material';
 
 const Login = () => {
+    const handleLogin = () => {
+        navigate('/login');
+      };
+
   return (
     <>
       <h1 className={styles.heading}>Signin to your PopX account</h1>
@@ -37,7 +42,7 @@ const Login = () => {
         </FormControl>
       </div>
 
-      <button className={styles['login-button']}>
+      <button className={styles['login-button']} onClick={handleLogin}>
         Login
       </button>
     </>
