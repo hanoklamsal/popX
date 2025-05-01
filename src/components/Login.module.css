@@ -1,0 +1,43 @@
+.heading {
+    margin: 40px 0 20px 20px;
+    height: 69px;
+    width: 188px;
+    text-align: left;
+    font: 500 28px/36px "Rubik", sans-serif;
+    letter-spacing: 0;
+    color: #1d2226;
+    opacity: 1;
+  }
+  
+  .subheading {
+    margin: 20px 0 0 20px;
+    text-align: left;
+    font: 400 18px/26px "Rubik", sans-serif;
+    letter-spacing: 0;
+    color: #1d2226;
+    opacity: 0.6;
+  }
+  
+  .email {
+    
+    margin: 33px 20px 0 20px;
+  }
+
+  .password{
+    margin: 14px 20px 0 20px; 
+  }
+
+  .login-button{
+    margin: 33px 0 0 20px;
+    background: #CBCBCB 0% 0% no-repeat padding-box;
+border-radius: 6px;
+opacity: 1;
+border: none;
+width: 335px;
+height: 46px;
+text-align: center;
+font: normal normal medium 16px/17px Rubik;
+letter-spacing: 0px;
+color: #FFFFFF;
+  }
+  
